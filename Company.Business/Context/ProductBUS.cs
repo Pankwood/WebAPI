@@ -9,6 +9,7 @@
 #region Referencies
 using Company.Business.Entity;
 using Company.DataAcess;
+using Company.DataAcess.Entity;
 using Company.DomainModel;
 using System.Collections.Generic;
 #endregion
@@ -17,6 +18,13 @@ namespace Company.Business.Context
 {
     public class ProductBUS : IProductBUS
     {
+        //private IProductData _vData;
+
+        //public ProductBUS(IProductData vData)
+        //{
+        //    this._vData = vData;
+        //}
+
         /// <summary>Get all products.
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>

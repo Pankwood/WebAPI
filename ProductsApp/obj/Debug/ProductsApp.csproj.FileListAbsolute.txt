@@ -20,3 +20,13 @@ C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Company.Business.pdb
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Company.DomainModel.pdb
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Company.Helper.pdb
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Company.DataAcess.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.Unity.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.Unity.xml
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Unity.WebApi.dll
