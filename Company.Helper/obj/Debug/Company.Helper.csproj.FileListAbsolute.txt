@@ -1,0 +1,5 @@
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\bin\Debug\Company.Helper.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\bin\Debug\Company.Helper.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\obj\Debug\Company.Helper.csprojResolveAssemblyReference.cache
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\obj\Debug\Company.Helper.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\obj\Debug\Company.Helper.pdb

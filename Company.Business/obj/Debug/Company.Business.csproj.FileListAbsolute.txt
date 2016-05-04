@@ -1,0 +1,9 @@
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\obj\Debug\Company.Business.csprojResolveAssemblyReference.cache
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Debug\Company.Business.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Debug\Company.Business.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Debug\Company.DataAcess.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Debug\Company.DomainModel.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Debug\Company.DataAcess.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Debug\Company.DomainModel.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\obj\Debug\Company.Business.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\obj\Debug\Company.Business.pdb

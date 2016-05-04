@@ -1,0 +1,5 @@
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\bin\Debug\Company.DomainModel.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\bin\Debug\Company.DomainModel.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\obj\Debug\Company.DomainModel.csprojResolveAssemblyReference.cache
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\obj\Debug\Company.DomainModel.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\obj\Debug\Company.DomainModel.pdb
