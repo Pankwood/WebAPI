@@ -19,9 +19,9 @@ namespace Company.DataAcess
     {
         Product[] products = new Product[] 
         { 
-            new Product { Id = 1, Name = "Tomato Soup", Category = "Groceries", Price = 1 }, 
-            new Product { Id = 2, Name = "Yo-yo", Category = "Toys", Price = 3.75M }, 
-            new Product { Id = 3, Name = "Hammer", Category = "Hardware", Price = 16.99M } 
+            new Product { Id = 1, Name = "Tomato Soup", IDCategory = 1, Price = 1 }, 
+            new Product { Id = 2, Name = "Yo-yo", IDCategory = 2, Price = 3.75M }, 
+            new Product { Id = 3, Name = "Hammer", IDCategory = 3, Price = 16.99M } 
         };
 
         public override IEnumerable<Product> getProduct()
@@ -41,7 +41,7 @@ namespace Company.DataAcess
             Product product = new Product();
             product.Id = pValue.Id;
             product.Name = pValue.Name;
-            product.Category = pValue.Category;
+            product.IDCategory = pValue.IDCategory;
             product.Price = pValue.Price;
 
             return products.Concat(new Product[] { product });
@@ -58,7 +58,7 @@ namespace Company.DataAcess
             Product product = new Product();
             product.Id = pValue.Id;
             product.Name = pValue.Name;
-            product.Category = pValue.Category;
+            product.IDCategory = pValue.IDCategory;
             product.Price = pValue.Price;
 
             return productList.Concat(new Product[] { product });
