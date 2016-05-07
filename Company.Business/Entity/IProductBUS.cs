@@ -21,6 +21,8 @@ namespace Company.Business.Entity
 
         public abstract Product GetByID(int id);
 
+        public abstract IEnumerable<Product> FindByName(string name);
+
 
         public abstract IEnumerable<Product> Post(Product value);
 
@@ -29,5 +31,6 @@ namespace Company.Business.Entity
 
 
         public abstract IEnumerable<Product> Delete(int id);
+
     }
 }

@@ -36,6 +36,13 @@ namespace Company.DataAcess
             return product;
         }
 
+        public override IEnumerable<Product> getProductByName(string name)
+        {
+            var product = products.Where(p => p.Name.Contains(name)).ToList();
+
+            return product;
+        }
+
         public override IEnumerable<Product> postProduct(Product pValue)
         {
             Product product = new Product();

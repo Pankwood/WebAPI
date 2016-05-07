@@ -34,6 +34,7 @@ namespace ProductsApp.Controllers
             HttpResponseMessage response;
             //ProductBUS product = new ProductBUS();
             try
+            
             {
                 IEnumerable<Product> products = _product.Get();
 
@@ -61,6 +62,7 @@ namespace ProductsApp.Controllers
             }
         }
 
+        [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Get(int id)
         {
             HttpResponseMessage response;
@@ -69,6 +71,38 @@ namespace ProductsApp.Controllers
             try
             {
                 Product products = _product.GetByID(id);
+
+                if (products == null)
+                {
+                    response = Request.CreateResponse(HttpStatusCode.NotFound, products);
+                    return response;
+                }
+                else
+                {
+                    response = Request.CreateResponse(HttpStatusCode.OK, products);
+                    response.Headers.CacheControl = new CacheControlHeaderValue()
+                    {
+                        MaxAge = TimeSpan.FromMinutes(20)
+                    };
+
+                    return response;
+                }
+            }
+            catch (Exception e)
+            {
+                response = Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+                return response;
+            }
+        }
+
+        [Route("~/api/product/{name:alpha:minlength(1)}")]
+        public HttpResponseMessage Get(string name)
+        {
+            HttpResponseMessage response;
+
+            try
+            {
+                IEnumerable<Product> products = _product.FindByName(name);
 
                 if (products == null)
                 {
@@ -119,6 +153,7 @@ namespace ProductsApp.Controllers
             }
         }
 
+        [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Put(int id, [FromBody]Product pProduct)
         {
             HttpResponseMessage response;
@@ -146,6 +181,7 @@ namespace ProductsApp.Controllers
             }
         }
 
+        [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Delete(int id)
         {
             HttpResponseMessage response;

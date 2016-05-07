@@ -20,6 +20,7 @@ namespace Company.DataAcess.Entity
 
         public abstract Product getProductByID(int id);
 
+        public abstract IEnumerable<Product> getProductByName(string name);
 
         public abstract IEnumerable<Product> postProduct(Product value);
 

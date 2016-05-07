@@ -18,13 +18,6 @@ namespace Company.Business.Context
 {
     public class ProductBUS : IProductBUS
     {
-        //private IProductData _vData;
-
-        //public ProductBUS(IProductData vData)
-        //{
-        //    this._vData = vData;
-        //}
-
         /// <summary>Get all products.
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>
@@ -48,6 +41,19 @@ namespace Company.Business.Context
             ProductDATA vData = new ProductDATA();
 
             var product = vData.getProductByID(id);
+
+            return product;
+        }
+
+        /// <summary>Get a product by name.
+        /// <param name="name"></param>
+        /// <seealso cref="ProductBUS.cs"/>
+        /// </summary>
+        public override IEnumerable<Product> FindByName(string name)
+        {
+            ProductDATA vData = new ProductDATA();
+
+            var product = vData.getProductByName(name);
 
             return product;
         }
