@@ -9,6 +9,7 @@
 #region Referencies
 using Company.Business.Entity;
 using Company.DomainModel;
+using Company.Security.BasicAuth;
 using System;
 using System.Collections.Generic;
 using System.Net;
@@ -29,6 +30,7 @@ namespace ProductsApp.Controllers
             this._product = product;
         }
 
+        [AllowAnonymous]
         public HttpResponseMessage Get()
         {
             HttpResponseMessage response;
@@ -62,6 +64,7 @@ namespace ProductsApp.Controllers
             }
         }
 
+        [AllowAnonymous]
         [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Get(int id)
         {
@@ -95,6 +98,7 @@ namespace ProductsApp.Controllers
             }
         }
 
+        [AllowAnonymous]
         [Route("~/api/product/{name:alpha:minlength(1)}")]
         public HttpResponseMessage Get(string name)
         {
@@ -127,6 +131,7 @@ namespace ProductsApp.Controllers
             }
         }
 
+        [CustomAuthorizeAttribute(Users = "acc1,acc2")]
         public HttpResponseMessage Post([FromBody]Product pProduct)
         {
             HttpResponseMessage response;
@@ -153,6 +158,7 @@ namespace ProductsApp.Controllers
             }
         }
 
+        [CustomAuthorizeAttribute(Users = "acc1,acc3")]
         [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Put(int id, [FromBody]Product pProduct)
         {
@@ -181,6 +187,7 @@ namespace ProductsApp.Controllers
             }
         }
 
+        [CustomAuthorizeAttribute(Roles = "Admin")]
         [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Delete(int id)
         {

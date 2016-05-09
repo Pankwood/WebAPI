@@ -30,3 +30,5 @@ C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Unity.WebApi.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Company.Security.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Company.Security.pdb

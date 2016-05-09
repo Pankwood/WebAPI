@@ -128,6 +128,10 @@
       <Project>{6c942d24-91ee-4238-a9bb-b96738ef80e8}</Project>
       <Name>Company.Helper</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Company.Security\Company.Security.csproj">
+      <Project>{1446450c-7834-4786-93ae-d997a56816a1}</Project>
+      <Name>Company.Security</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
