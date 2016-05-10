@@ -46,12 +46,12 @@ namespace ProductsApp.Controllers
 
                 if (products == null)
                 {
-                    response = Request.CreateResponse(HttpStatusCode.NotFound, products);
+                    response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Product not found");
                     return response;
                 }
                 else
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, products);
+                    response = Request.CreateResponse(products);
                     response.Headers.CacheControl = new CacheControlHeaderValue()
                     {
                         MaxAge = TimeSpan.FromMinutes(20)
@@ -62,7 +62,7 @@ namespace ProductsApp.Controllers
             }
             catch (Exception e)
             {
-                response = Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+                response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e.Message);
                 return response;
 
             }
@@ -85,12 +85,12 @@ namespace ProductsApp.Controllers
 
                 if (products == null)
                 {
-                    response = Request.CreateResponse(HttpStatusCode.NotFound, products);
+                    response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Product not found");
                     return response;
                 }
                 else
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, products);
+                    response = Request.CreateResponse(products);
                     response.Headers.CacheControl = new CacheControlHeaderValue()
                     {
                         MaxAge = TimeSpan.FromMinutes(20)
@@ -101,7 +101,7 @@ namespace ProductsApp.Controllers
             }
             catch (Exception e)
             {
-                response = Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+                response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e.Message);
                 return response;
             }
         }
@@ -122,12 +122,12 @@ namespace ProductsApp.Controllers
 
                 if (products == null)
                 {
-                    response = Request.CreateResponse(HttpStatusCode.NotFound, products);
+                    response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Product not found");
                     return response;
                 }
                 else
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, products);
+                    response = Request.CreateResponse(products);
                     response.Headers.CacheControl = new CacheControlHeaderValue()
                     {
                         MaxAge = TimeSpan.FromMinutes(20)
@@ -138,7 +138,7 @@ namespace ProductsApp.Controllers
             }
             catch (Exception e)
             {
-                response = Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+                response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e.Message);
                 return response;
             }
         }
@@ -158,18 +158,18 @@ namespace ProductsApp.Controllers
                 IEnumerable<Product> products = _product.Post(pProduct);
                 if (products == null)
                 {
-                    response = Request.CreateResponse(HttpStatusCode.NotFound, products);
+                    response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Product not found");
                     return response;
                 }
                 else
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, products);
+                    response = Request.CreateResponse(products);
                     return response;
                 }
             }
             catch (Exception e)
             {
-                response = Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+                response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e.Message);
                 return response;
             }
         }
@@ -192,18 +192,18 @@ namespace ProductsApp.Controllers
 
                 if (products == null)
                 {
-                    response = Request.CreateResponse(HttpStatusCode.NotFound, products);
+                    response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Product not found");
                     return response;
                 }
                 else
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, products);
+                    response = Request.CreateResponse(products);
                     return response;
                 }
             }
             catch (Exception e)
             {
-                response = Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+                response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e.Message);
                 return response;
             }
         }
@@ -225,18 +225,18 @@ namespace ProductsApp.Controllers
                 IEnumerable<Product> products = _product.Delete(id);
                 if (products == null)
                 {
-                    response = Request.CreateResponse(HttpStatusCode.NotFound, products);
+                    response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Product not found");
                     return response;
                 }
                 else
                 {
-                    response = Request.CreateResponse(HttpStatusCode.OK, products);
+                    response = Request.CreateResponse(products);
                     return response;
                 }
             }
             catch (Exception e)
             {
-                response = Request.CreateResponse(HttpStatusCode.InternalServerError, e.Message);
+                response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e.Message);
                 return response;
             }
             //return product.Delete(id);
