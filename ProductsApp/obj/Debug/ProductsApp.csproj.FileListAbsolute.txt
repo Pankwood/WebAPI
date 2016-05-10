@@ -46,3 +46,6 @@ C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\obj\Debug\ProductsApp.cs
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\obj\Debug\ProductsApp.dll
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\obj\Debug\ProductsApp.pdb
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\ProductsApp.XML
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\System.Web.Cors.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\System.Web.Http.Cors.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\System.Web.Http.Cors.xml

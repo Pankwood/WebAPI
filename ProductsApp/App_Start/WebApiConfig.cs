@@ -8,6 +8,7 @@
 
 #region Referencies
 using System.Web.Http;
+using System.Web.Http.Cors;
 #endregion
 
 namespace ProductsApp
@@ -17,6 +18,8 @@ namespace ProductsApp
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+            var cors = new EnableCorsAttribute("*", "*", "GET");
+            config.EnableCors(cors);
 
             // Web API routes
             config.MapHttpAttributeRoutes();

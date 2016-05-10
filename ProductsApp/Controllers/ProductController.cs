@@ -16,11 +16,13 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 #endregion
 
 namespace ProductsApp.Controllers
 {
+    [EnableCors("", "*", "GET")]
     [RoutePrefix("product")]
     public class ProductController : ApiController
     {

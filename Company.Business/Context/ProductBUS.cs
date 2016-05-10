@@ -58,7 +58,6 @@ namespace Company.Business.Context
             return product;
         }
 
-
         /// <summary>Get a product by name.
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>
