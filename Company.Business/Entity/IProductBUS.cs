@@ -21,6 +21,10 @@ namespace Company.Business.Entity
 
         public abstract Product GetByID(int id);
 
+
+        public abstract IEnumerable<Brand> GetBrand(int id);
+
+
         public abstract IEnumerable<Product> FindByName(string name);
 
 
@@ -31,6 +35,5 @@ namespace Company.Business.Entity
 
 
         public abstract IEnumerable<Product> Delete(int id);
-
     }
 }

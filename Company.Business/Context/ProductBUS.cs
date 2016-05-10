@@ -45,6 +45,20 @@ namespace Company.Business.Context
             return product;
         }
 
+        /// <summary>Get a brand by product.
+        /// <seealso cref="ProductBUS.cs"/>
+        /// </summary>
+        /// <param name="id">The ID of the product.</param>
+        public override IEnumerable<Brand> GetBrand(int id)
+        {
+            ProductDATA vData = new ProductDATA();
+
+            var product = vData.getBrand(id);
+
+            return product;
+        }
+
+
         /// <summary>Get a product by name.
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>

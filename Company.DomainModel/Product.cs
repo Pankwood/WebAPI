@@ -6,7 +6,11 @@
 //===================================================================================
 #endregion
 
+#region Referencies
 using System;
+using System.Collections.Generic;
+#endregion
+
 namespace Company.DomainModel
 {
     public class Product
@@ -23,6 +27,7 @@ namespace Company.DomainModel
         public decimal Price { get; set; }
         public DateTime DateAcquired { get; set; }
         public bool isActive { get; set; }
+        public ICollection<Brand> Brands { get; set; }
 
         public override string ToString()
         {

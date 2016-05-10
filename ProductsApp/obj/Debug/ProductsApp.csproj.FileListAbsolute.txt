@@ -45,4 +45,4 @@ C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\Company.DataAcess.pd
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\obj\Debug\ProductsApp.csprojResolveAssemblyReference.cache
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\obj\Debug\ProductsApp.dll
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\obj\Debug\ProductsApp.pdb
-C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\XmlDocument.xml
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\ProductsApp\bin\ProductsApp.XML

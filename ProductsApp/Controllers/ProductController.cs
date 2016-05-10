@@ -107,6 +107,42 @@ namespace ProductsApp.Controllers
         }
 
         /// <summary>
+        /// Get a brand by product.
+        /// </summary>
+        /// <param name="id">The ID of the product.</param>
+        [AllowAnonymous]
+        [Route("~/api/product/{id}/brands")]
+        public HttpResponseMessage GetBrand(int id)
+        {
+            HttpResponseMessage response;
+            try
+            {
+              IEnumerable<Brand>  brands = _product.GetBrand(id);
+
+                if (brands == null)
+                {
+                    response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Brand not found");
+                    return response;
+                }
+                else
+                {
+                    response = Request.CreateResponse(brands);
+                    response.Headers.CacheControl = new CacheControlHeaderValue()
+                    {
+                        MaxAge = TimeSpan.FromMinutes(20)
+                    };
+
+                    return response;
+                }
+            }
+            catch (Exception e)
+            {
+                response = Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e.Message);
+                return response;
+            }
+        }
+
+        /// <summary>
         /// Get a product by name.
         /// </summary>
         /// <param name="name">The name of the product.</param>

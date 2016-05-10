@@ -4,7 +4,7 @@
 //===================================================================================
 // Copyright (c) 2016, Danilo Debiazi Vicente  All Rights Reserved.
 //===================================================================================
-#endregion
+#endregion[
 
 #region Referencies
 using Company.DataAcess.Entity;
@@ -19,9 +19,9 @@ namespace Company.DataAcess
     {
         Product[] products = new Product[] 
         { 
-            new Product { Id = 1, Name = "Tomato Soup", IDCategory = 1, Price = 1 }, 
-            new Product { Id = 2, Name = "Yo-yo", IDCategory = 2, Price = 3.75M }, 
-            new Product { Id = 3, Name = "Hammer", IDCategory = 3, Price = 16.99M } 
+            new Product { Id = 1, Name = "Keyboard", IDCategory = 1, Price = 1, Brands = new Brand[]{ new Brand {Id=1, Name="Microsoft"}, new Brand {Id=2, Name="Apple"}, new Brand {Id=2, Name="Amazon"}}},
+            new Product { Id = 2, Name = "Mouse", IDCategory = 2, Price = 3.75M, Brands = new Brand[]{ new Brand {Id=1, Name="Microsoft"}, new Brand {Id=2, Name="Apple"}, new Brand {Id=2, Name="Amazon"}}},
+            new Product { Id = 3, Name = "Headset", IDCategory = 3, Price = 16.99M, Brands = new Brand[]{new Brand{Id=1, Name="Microsoft"}}} 
         };
 
         public override IEnumerable<Product> getProduct()
@@ -34,6 +34,13 @@ namespace Company.DataAcess
             var product = products.FirstOrDefault((p) => p.Id == id);
 
             return product;
+        }
+
+        public override IEnumerable<Brand> getBrand(int id)
+        {
+            var product = products.FirstOrDefault((p) => p.Id == id);
+
+            return product.Brands;
         }
 
         public override IEnumerable<Product> getProductByName(string name)

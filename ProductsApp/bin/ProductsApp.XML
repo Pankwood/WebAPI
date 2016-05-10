@@ -492,6 +492,12 @@
             </summary>
             <param name="id">The ID of the product.</param>
         </member>
+        <member name="M:ProductsApp.Controllers.ProductController.GetBrand(System.Int32)">
+            <summary>
+            Get a brand by product.
+            </summary>
+            <param name="id">The ID of the product.</param>
+        </member>
         <member name="M:ProductsApp.Controllers.ProductController.Get(System.String)">
             <summary>
             Get a product by name.
