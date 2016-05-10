@@ -16,6 +16,7 @@ using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Description;
 #endregion
 
 namespace ProductsApp.Controllers
@@ -30,6 +31,9 @@ namespace ProductsApp.Controllers
             this._product = product;
         }
 
+        /// <summary>
+        /// Get all products.
+        /// </summary>
         [AllowAnonymous]
         public HttpResponseMessage Get()
         {
@@ -64,6 +68,10 @@ namespace ProductsApp.Controllers
             }
         }
 
+        /// <summary>
+        /// Get a product by id.
+        /// </summary>
+        /// <param name="id">The ID of the product.</param>
         [AllowAnonymous]
         [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Get(int id)
@@ -98,6 +106,10 @@ namespace ProductsApp.Controllers
             }
         }
 
+        /// <summary>
+        /// Get a product by name.
+        /// </summary>
+        /// <param name="name">The name of the product.</param>
         [AllowAnonymous]
         [Route("~/api/product/{name:alpha:minlength(1)}")]
         public HttpResponseMessage Get(string name)
@@ -131,6 +143,10 @@ namespace ProductsApp.Controllers
             }
         }
 
+        /// <summary>
+        /// Post a new product.
+        /// </summary>
+        /// <param name="pProduct">The product that you want to input</param>
         [CustomAuthorizeAttribute(Users = "acc1,acc2")]
         public HttpResponseMessage Post([FromBody]Product pProduct)
         {
@@ -158,6 +174,11 @@ namespace ProductsApp.Controllers
             }
         }
 
+        /// <summary>
+        /// Update a product by id.
+        /// </summary>
+        /// <param name="id">The ID of the product.</param>
+        /// <param name="pProduct">The product that you want to input</param>
         [CustomAuthorizeAttribute(Users = "acc1,acc3")]
         [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Put(int id, [FromBody]Product pProduct)
@@ -187,6 +208,11 @@ namespace ProductsApp.Controllers
             }
         }
 
+        /// <summary>
+        /// Delete a product by id.
+        /// </summary>
+        /// <param name="id">The ID of the product.</param>
+        [ApiExplorerSettings(IgnoreApi = true)]
         [CustomAuthorizeAttribute(Roles = "Admin")]
         [Route("~/api/product/{id:int:min(1)}")]
         public HttpResponseMessage Delete(int id)

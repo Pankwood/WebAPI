@@ -1,6 +1,6 @@
-C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Security\obj\Debug\Company.Security.csprojResolveAssemblyReference.cache
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Security\bin\Debug\Company.Security.dll
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Security\bin\Debug\Company.Security.pdb
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Security\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Security\obj\Debug\Company.Security.dll
 C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Security\obj\Debug\Company.Security.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Security\obj\Debug\Company.Security.csprojResolveAssemblyReference.cache

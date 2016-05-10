@@ -9,7 +9,6 @@
 #region Referencies
 using Company.DomainModel;
 using System.Collections.Generic;
-
 #endregion
 
 namespace Company.DataAcess.Entity
@@ -24,9 +23,7 @@ namespace Company.DataAcess.Entity
 
         public abstract IEnumerable<Product> postProduct(Product value);
 
-
         public abstract IEnumerable<Product> putProduct(int id, Product value);
-
 
         public abstract IEnumerable<Product> deleteProduct(int id);
     }

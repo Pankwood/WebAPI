@@ -1,9 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿#region Licence
+//===================================================================================
+// Danilo Debiazi Vicente
+//===================================================================================
+// Copyright (c) 2016, Danilo Debiazi Vicente  All Rights Reserved.
+//===================================================================================
+#endregion
+
+#region Referencies
 using System.Web.Http;
-using System.Web.Routing;
+using System.Web.Mvc;
+#endregion
 
 namespace ProductsApp
 {
@@ -13,7 +19,7 @@ namespace ProductsApp
         {
             GlobalConfiguration.Configure(WebApiConfig.Register);
             UnityConfig.RegisterComponents();
-
+            AreaRegistration.RegisterAllAreas();
         }
     }
 }

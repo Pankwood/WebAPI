@@ -1,0 +1,4 @@
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\bin\Release\Company.DomainModel.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\bin\Release\Company.DomainModel.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\obj\Release\Company.DomainModel.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.DomainModel\obj\Release\Company.DomainModel.pdb

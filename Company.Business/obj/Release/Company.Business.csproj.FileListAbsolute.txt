@@ -1,0 +1,15 @@
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\Company.Business.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\Company.Business.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\Company.DataAcess.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\Company.DomainModel.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\Newtonsoft.Json.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\System.Net.Http.Formatting.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\System.Web.Http.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\Company.DataAcess.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\Company.DomainModel.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\Newtonsoft.Json.xml
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\System.Net.Http.Formatting.xml
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\bin\Release\System.Web.Http.xml
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\obj\Release\Company.Business.csprojResolveAssemblyReference.cache
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\obj\Release\Company.Business.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Business\obj\Release\Company.Business.pdb

@@ -33,9 +33,9 @@ namespace Company.Business.Context
         }
 
         /// <summary>Get a product by id.
-        /// <param name="id"></param>
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>
+        /// <param name="id">The ID of the product.</param>
         public override Product GetByID(int id)
         {
             ProductDATA vData = new ProductDATA();
@@ -46,9 +46,9 @@ namespace Company.Business.Context
         }
 
         /// <summary>Get a product by name.
-        /// <param name="name"></param>
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>
+        /// <param name="name">The name of the product.</param>
         public override IEnumerable<Product> FindByName(string name)
         {
             ProductDATA vData = new ProductDATA();
@@ -59,9 +59,9 @@ namespace Company.Business.Context
         }
 
         /// <summary>Post a new product.
-        /// <param name="pProduct"></param>
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>
+        /// <param name="pProduct">The product that you want to input</param>
         public override IEnumerable<Product> Post(Product pProduct)
         {
             ProductDATA vData = new ProductDATA();
@@ -72,10 +72,10 @@ namespace Company.Business.Context
         }
 
         /// <summary>Update a product by id.
-        /// <param name="id"></param>        
-        /// <param name="pProduct"></param>
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>
+        /// <param name="id">The ID of the product.</param>
+        /// <param name="pProduct">The product that you want to input</param>
         public override IEnumerable<Product> Put(int id, Product pProduct)
         {
             ProductDATA vData = new ProductDATA();
@@ -86,9 +86,9 @@ namespace Company.Business.Context
         }
 
         /// <summary>Delete a product by id.
-        /// <param name="id"></param>        
         /// <seealso cref="ProductBUS.cs"/>
         /// </summary>
+        /// <param name="id">The ID of the product.</param>
         public override IEnumerable<Product> Delete(int id)
         {
             ProductDATA vData = new ProductDATA();

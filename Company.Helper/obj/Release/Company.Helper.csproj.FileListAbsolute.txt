@@ -1,0 +1,4 @@
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\bin\Release\Company.Helper.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\bin\Release\Company.Helper.pdb
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\obj\Release\Company.Helper.dll
+C:\Users\Danilo\Documents\Estudos\WebAPI\C#\Company.Helper\obj\Release\Company.Helper.pdb
