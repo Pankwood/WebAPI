@@ -22,7 +22,7 @@ using System.Web.Http.Description;
 
 namespace ProductsApp.Controllers
 {
-    [EnableCors("", "*", "GET")]
+    [EnableCors("*", "*", "GET")]
     [RoutePrefix("product")]
     public class ProductController : ApiController
     {
@@ -185,7 +185,7 @@ namespace ProductsApp.Controllers
         /// Post a new product.
         /// </summary>
         /// <param name="pProduct">The product that you want to input</param>
-        [CustomAuthorizeAttribute(Users = "acc1,acc2")]
+        [AllowAnonymous]
         public HttpResponseMessage Post([FromBody]Product pProduct)
         {
             HttpResponseMessage response;

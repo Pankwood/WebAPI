@@ -57,6 +57,7 @@ namespace Company.DataAcess
             product.Name = pValue.Name;
             product.IDCategory = pValue.IDCategory;
             product.Price = pValue.Price;
+            product.isActive = pValue.isActive;
 
             return products.Concat(new Product[] { product });
         }
