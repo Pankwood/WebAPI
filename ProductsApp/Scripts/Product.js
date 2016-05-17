@@ -11,6 +11,13 @@ function GetAllProducts() {
         success: function (data) {
             WriteResponse(data);
         },
+        beforeSend: function () {
+            // setting a timeout
+            $("#loading").show();
+        },
+        complete: function () {
+            $('#loading').hide();
+        },
         error: function (x, y, z) {
             alert(x + '\n' + y + '\n' + z);
         }
@@ -40,6 +47,13 @@ function AddProduct() {
             contentType: "application/json;charset=utf-8",
             success: function (data) {
                 WriteResponse(data);
+            },
+            beforeSend: function () {
+                // setting a timeout
+                $("#loading").show()
+            },
+            complete: function () {
+                $('#loading').hide();
             },
             error: function (x, y, z) {
                 alert(x + '\n' + y + '\n' + z);
@@ -82,6 +96,13 @@ function GetProduct() {
             success: function (data) {
                 ShowProduct(data);
             },
+            beforeSend: function () {
+                // setting a timeout
+                $("#loading").show();
+            },
+            complete: function () {
+                $('#loading').hide();
+            },
             error: function (x, y, z) {
                 alert(x + '\n' + y + '\n' + z);
             }
@@ -92,6 +113,5 @@ function GetProduct() {
         $("#divResult").html("Input some code");
         $('#txtFindId').focus();
         window.scrollTo(0, document.body.scrollHeight);
-
     }
 }

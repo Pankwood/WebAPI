@@ -10,5 +10,6 @@ Example Web API 2 using the best practices and high technology from Microsoft.
   <li>Help Pages with Test API</li>
   <li>JQuery and Bootstrap in Index page</li>
   <li>DataAnnotation to required fields</li>
+  <li>Ajax loading page</li>
 </ul>
 

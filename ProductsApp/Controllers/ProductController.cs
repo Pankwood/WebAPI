@@ -53,6 +53,7 @@ namespace ProductsApp.Controllers
                 }
                 else
                 {
+                    System.Threading.Thread.Sleep(10000);
                     response = Request.CreateResponse(products);
                     response.Headers.CacheControl = new CacheControlHeaderValue()
                     {
