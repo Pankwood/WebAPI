@@ -4,18 +4,18 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 function GetAllProducts() {
-        $.ajax({
-            url: 'http://localhost:47503/api/product/',
-            type: 'GET',
-            dataType: 'json',            
-            success: function (data) {                
-                WriteResponse(data);
-            },
-            error: function (x, y, z) {
-                alert(x + '\n' + y + '\n' + z);
-            }
-        });        
-    }
+    $.ajax({
+        url: 'http://localhost:47503/api/product/',
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+            WriteResponse(data);
+        },
+        error: function (x, y, z) {
+            alert(x + '\n' + y + '\n' + z);
+        }
+    });
+}
 
 function AddProduct() {
     var product = {
@@ -25,8 +25,7 @@ function AddProduct() {
         isActive: $("#chkIsActive").prop('checked')
     };
 
-    if ((product.Id == "") && (product.Name == ""))
-    {
+    if ((product.Id == "") && (product.Name == "")) {
         $("#divResult").html("Input code and name");
         $('#txtId').focus();
         window.scrollTo(0, document.body.scrollHeight);
@@ -49,9 +48,9 @@ function AddProduct() {
     }
 }
 
-function WriteResponse(products) {        
+function WriteResponse(products) {
     var strResult = "<table><th>ID</th><th>Name</th><th>Price</th><th>Active</th>";
-    $.each(products, function (index, product) {                        
+    $.each(products, function (index, product) {
         strResult += "<tr><td>" + product.Id + "</td><td> " + product.Name + "</td><td>" + product.Price + "</td><td>" + product.isActive + "</td></tr>";
     });
     strResult += "</table>";
@@ -66,12 +65,13 @@ function ShowProduct(product) {
         strResult += "</table>";
         $("#divResult").html(strResult);
     }
-    else {
+    else
+    {
         $("#divResult").html("No Results To Display");
     }
     window.scrollTo(0, document.body.scrollHeight);
 }
-   
+
 function GetProduct() {
     var id = $('#txtFindId').val();
     if (id != "") {
@@ -87,7 +87,8 @@ function GetProduct() {
             }
         });
     }
-    else {
+    else
+    {
         $("#divResult").html("Input some code");
         $('#txtFindId').focus();
         window.scrollTo(0, document.body.scrollHeight);

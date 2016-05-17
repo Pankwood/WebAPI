@@ -193,15 +193,23 @@ namespace ProductsApp.Controllers
 
             try
             {
-                IEnumerable<Product> products = _product.Post(pProduct);
-                if (products == null)
+                if (ModelState.IsValid)
                 {
-                    response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Product not found");
-                    return response;
+                    IEnumerable<Product> products = _product.Post(pProduct);
+                    if (products == null)
+                    {
+                        response = Request.CreateErrorResponse(HttpStatusCode.NotFound, "Product not found");
+                        return response;
+                    }
+                    else
+                    {
+                        response = Request.CreateResponse(products);
+                        return response;
+                    }
                 }
                 else
                 {
-                    response = Request.CreateResponse(products);
+                    response = Request.CreateErrorResponse(HttpStatusCode.BadRequest, "There are fields required unfill");
                     return response;
                 }
             }

@@ -8,5 +8,7 @@ Example Web API 2 using the best practices and high technology from Microsoft.
   <li>Routing</li>
   <li>Authentication and Authorization with Basic Auth (Doing)</li>
   <li>Help Pages with Test API</li>
+  <li>JQuery and Bootstrap in Index page</li>
+  <li>DataAnnotation to required fields</li>
 </ul>
 

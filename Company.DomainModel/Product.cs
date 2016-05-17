@@ -9,6 +9,7 @@
 #region Referencies
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 #endregion
 
 namespace Company.DomainModel
@@ -20,12 +21,16 @@ namespace Company.DomainModel
             DateAcquired = Convert.ToDateTime(DateTime.Now.ToShortDateString());
             isActive = true;
         }
+        [Required]
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
         public int IDCategory { get; set; }
         public virtual Category Category { get; set; }
-        public decimal Price { get; set; }
-        public DateTime DateAcquired { get; set; }
+        [DataType(DataType.Currency)]
+        public decimal? Price { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime? DateAcquired { get; set; }
         public bool isActive { get; set; }
         public ICollection<Brand> Brands { get; set; }
 
